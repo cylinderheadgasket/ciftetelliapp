@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wTU-Ez-LEC">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ciftetelliApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoş Geldiniz!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-2t-Vf2">
+                                <rect key="frame" x="20" y="191" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Çift Numaranızı Giriniz." textAlignment="natural" minimumFontSize="17" background="rectangle.portrait.and.arrow.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lZz-SK-pYj">
+                                <rect key="frame" x="20" y="245" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="NpA-8J-uh2"/>
+                                    <constraint firstAttribute="height" constant="40" id="cvx-Bb-1FW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-7h-8hl">
+                                <rect key="frame" x="20" y="305" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="3jm-RX-FFt"/>
+                                    <constraint firstAttribute="height" constant="50" id="6Cg-Wi-vqM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vUd-mH-9NH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="giris2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abF-AP-YAn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DevamappCo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHl-mR-m5c">
+                                <rect key="frame" x="20" y="769" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" systemColor="separatorColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7E-qy-RMg">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mai-7h-8hl" secondAttribute="trailing" constant="20" id="59n-i5-QiG"/>
+                            <constraint firstItem="MHl-mR-m5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5HJ-24-yqa"/>
+                            <constraint firstItem="lZz-SK-pYj" firstAttribute="top" secondItem="DBg-2t-Vf2" secondAttribute="bottom" constant="10" id="5tx-CT-8BQ"/>
+                            <constraint firstItem="lZz-SK-pYj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9IG-LV-4gT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lZz-SK-pYj" secondAttribute="trailing" constant="20" id="9eQ-Mh-O6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MHl-mR-m5c" secondAttribute="bottom" constant="20" id="DIJ-jh-cg8"/>
+                            <constraint firstItem="z7E-qy-RMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DLE-Oq-t4n"/>
+                            <constraint firstItem="DBg-2t-Vf2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="XDk-dD-mVY"/>
+                            <constraint firstItem="DBg-2t-Vf2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cF7-xT-c9S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DBg-2t-Vf2" secondAttribute="trailing" constant="20" id="gGo-ku-Lt6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z7E-qy-RMg" secondAttribute="bottom" id="hdr-RR-iQ7"/>
+                            <constraint firstItem="lZz-SK-pYj" firstAttribute="top" secondItem="DBg-2t-Vf2" secondAttribute="bottom" constant="20" id="hgm-nu-iMH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z7E-qy-RMg" secondAttribute="trailing" id="jb2-pz-tw7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHl-mR-m5c" secondAttribute="trailing" constant="20" id="tdt-db-NZC"/>
+                            <constraint firstItem="Mai-7h-8hl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vJ1-b9-3Nm"/>
+                            <constraint firstItem="z7E-qy-RMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zca-fz-oBf"/>
+                            <constraint firstItem="Mai-7h-8hl" firstAttribute="top" secondItem="lZz-SK-pYj" secondAttribute="bottom" constant="20" id="zfK-8c-xNG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="exr-eh-BQg"/>
+                    <connections>
+                        <outlet property="giris" destination="Mai-7h-8hl" id="6z8-mM-G4D"/>
+                        <outlet property="login" destination="lZz-SK-pYj" id="lgl-zL-dGL"/>
+                        <segue destination="Zoe-cr-9JA" kind="show" id="CDp-6E-ob6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.15384615384608" y="3.5545023696682461"/>
+        </scene>
+        <!--ÇiftetelliApp-->
+        <scene sceneID="zTg-QC-sbb">
+            <objects>
+                <viewController id="Zoe-cr-9JA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SSZ-yK-48y">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appimage2.png" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-FE-47a">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="puI-qR-ILH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jnJ-FE-47a" firstAttribute="top" secondItem="puI-qR-ILH" secondAttribute="top" id="MwS-qI-UGK"/>
+                            <constraint firstItem="puI-qR-ILH" firstAttribute="bottom" secondItem="jnJ-FE-47a" secondAttribute="bottom" id="OYQ-5n-qTJ"/>
+                            <constraint firstItem="jnJ-FE-47a" firstAttribute="leading" secondItem="puI-qR-ILH" secondAttribute="leading" id="gtJ-kE-3FQ"/>
+                            <constraint firstItem="puI-qR-ILH" firstAttribute="trailing" secondItem="jnJ-FE-47a" secondAttribute="trailing" id="kaG-1o-ueT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ÇiftetelliApp" id="Vkl-cV-qad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZ7-K9-IL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U6l-up-vNc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wTU-Ez-LEC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ns1-5T-kvM">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="barTintColor" systemColor="systemMintColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="THt-Q7-cYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gT9-ee-vey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.92307692307692" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appimage.png" width="1080" height="1920"/>
+        <image name="appimage2.png" width="1080" height="1920"/>
+        <image name="rectangle.portrait.and.arrow.forward" catalog="system" width="128" height="109"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
